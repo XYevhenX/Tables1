@@ -4,22 +4,25 @@
 body {
   padding: 2rem;
   text-align: center;
+  
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 table {
-  min-width: 800px;
-  min-height: 500px;
+  width:100%;
+  height:50%;
   color: white;
-  border: 2px solid #23626a;
+  border: 0.25rem solid #23626a;
   background-color: white;
 }
 table caption {
   margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 td,
 th {
-  border: 1px solid #23626a;
+  border: 0.125rem solid #23626a;
   padding: 1rem;
+  vertical-align: middle;
 }
 tr:nth-child(2n + 1) {
   background-color: #e9e9e9;
@@ -33,7 +36,7 @@ th {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
-tr:not(:first-child, :nth-child(2), :nth-child(3)) {
+tr:nth-of-type(n+4), caption {
   color: black;
 }
 tr:nth-child(2) {
@@ -41,4 +44,16 @@ tr:nth-child(2) {
 }
 tr:nth-child(3) {
   background-color: #aaaaaa;
+}
+td{
+    min-width: 10rem;
+}
+tr:nth-of-type(n+4) td:first-of-type{
+    min-width: 20rem;
+}
+tr:nth-of-type(n+4) td:first-of-type{
+    text-align: left;
+}
+tr:nth-of-type(n+3) td:nth-of-type(5){
+    min-width: 15rem;
 }
