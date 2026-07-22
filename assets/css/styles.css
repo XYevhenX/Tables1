@@ -56,3 +56,7 @@ tr:nth-of-type(n+4) td:first-of-type{
 tr:nth-of-type(n+3) td:nth-of-type(5){
     min-width: 15rem;
 }
+tr:nth-of-type(n+4):hover{
+    background-color: #aaaaaa;
+    cursor: pointer;
+}
